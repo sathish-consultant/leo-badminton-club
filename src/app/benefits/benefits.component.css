@@ -1,6 +1,6 @@
 .benefits-section{
     border-bottom: 1px grey solid;
-    background-image: linear-gradient(rgb(51 0 0 / 59%), rgb(0 0 0 / 50%)), url('../../../public/assets/schedule-1.jpg');
+    background-image: linear-gradient(rgb(51 0 0 / 59%), rgb(0 0 0 / 50%)), url('../../../public/assets/benefits-1.jpg');
 
     background-size: cover;
     background-position: center;
