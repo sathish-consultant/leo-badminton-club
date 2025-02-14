@@ -1,0 +1,52 @@
+.activities-section{
+    border-bottom: 1px grey solid;
+    background-image: linear-gradient(rgb(0 70 103 / 57%), rgb(0 0 0 / 50%)), url('../../../public/assets/activity-1.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+h2{
+    padding-left: 50%
+}
+
+.text-section{
+    width: 50%;
+    color: white;
+    padding-left: 50%;
+    font-size: 15px;
+}
+
+.leo-button{
+    position: absolute;
+    bottom: 20px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .text-section{
+        width: 40%;
+        padding-left: 60%;
+        font-size: 23px;
+    }
+    h2{
+        padding-left: 79%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .text-section{
+        width: 30%;
+        padding-left: 70%;
+        font-size: 28px;
+    }
+
+    h2{
+        padding-left: 86%
+    }
+}

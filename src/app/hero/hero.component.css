@@ -1,0 +1,404 @@
+/* .hero-section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.preloader {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    animation: hideElem 1.15s forwards;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 500;
+    pointer-events: none;
+    /* max-width: 700px; */
+
+}
+
+.preloader-text {
+    left: 20%;
+    top: 30%;
+    position: relative;
+    /* max-width: 700px; */
+}
+
+.preloader-logo {
+    position: absolute;
+    z-index: 10;
+    left: 40%;
+    bottom: 100px;
+    animation: jump 0.4s infinite ease alternate;
+    width: 120px;
+    min-width: 120px;
+}
+
+
+@keyframes hideElem {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes showElem {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+g path {
+    transform: translateY(8px);
+}
+
+g path {
+    animation-name: wiggleWiggle;
+    animation-duration: 1.15s;
+    animation-iteration-count: infinite;
+}
+
+path#l {
+    animation-delay: 0.1s;
+}
+
+path#a {
+    animation-delay: 0.15s;
+}
+
+path#y {
+    animation-delay: 0.2s;
+}
+
+path#w {
+    animation-delay: 0.25s;
+}
+
+path#i {
+    animation-delay: 0.3s;
+}
+
+path#t {
+    animation-delay: 0.35s;
+}
+
+path#h {
+    animation-delay: 0.4s;
+}
+
+path#p2 {
+    animation-delay: 0.45s;
+}
+
+path#r {
+    animation-delay: 0.5s;
+}
+
+path#i2 {
+    animation-delay: 0.55s;
+}
+
+path#d {
+    animation-delay: 0.6s;
+}
+
+path#e {
+    animation-delay: 0.65s;
+}
+
+path#q1 {
+    animation-delay: 0.70s;
+}
+
+path#q2 {
+    animation-delay: 0.75s;
+}
+
+@keyframes wiggleWiggle {
+
+    20%,
+    100% {
+        transform: translate(0, 2px);
+        /* stay on the baseline for most of the animation duration */
+    }
+
+    0% {
+        transform: translate(0, 0px);
+        /* hop up */
+    }
+
+    10% {
+        transform: translate(0, 2px);
+        /* return to baseline */
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translatey(-10%);
+    }
+
+    100% {
+        transform: translatey(0%);
+    }
+}
+
+
+
+
+.hero {
+    height: 100vh;
+    /* background-image: url('../../../public/assets/hero-img2.jpg');  */
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    animation: showElem 1.15s forwards;
+    position: relative;
+   
+}
+
+.hero .background-video {
+    opacity: 0.2;
+    position: absolute;
+}
+
+.hero-content{
+    z-index: 1;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.hero-content .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff4500;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.top-bar {
+    margin-top: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+}
+
+.logo-img {
+    position: absolute;
+    width: 70px;
+    opacity: 0.8;
+}
+
+.logo-text-container {
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+
+.logo-text-container p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.logo-text-container p.title {
+    font-size: 2rem;
+    letter-spacing: 15px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.club-name {
+    color: #ff6f61;
+}
+
+.hero-tagline {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ff4a3d;
+}
+
+
+/*
+
+.hero-section {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: black;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    background-image: url(../../../public/assets/hero-img2.jpg);
+    background-size: cover;
+    animation: fadeInRight 1s ease-in-out;
+
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+
+
+.hero-animation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.animation-image {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+*/
+
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+
+    .hero-animation {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .animation-image {
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .preloader-text {
+        left: 35%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .preloader-text {
+        left: 40%;
+    }
+
+    .preloader-logo {
+        left: 45%;
+    }
+}

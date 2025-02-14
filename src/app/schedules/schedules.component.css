@@ -1,0 +1,40 @@
+.schedules-section{
+    border-bottom: 1px grey solid;
+    background-image: linear-gradient(rgb(51 0 0 / 59%), rgb(0 0 0 / 50%)), url('../../../public/assets/schedule-1.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.text-section{
+    width: 60%;
+    color: white;
+    font-size: 15px;
+}
+
+mat-list-item .schedule{
+
+    color: white !important;
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .text-section{
+        width: 50%;
+        color: white;
+        font-size: 23px;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .text-section{
+        width: 40%;
+        color: white;
+        font-size: 28px;
+
+    }
+}
