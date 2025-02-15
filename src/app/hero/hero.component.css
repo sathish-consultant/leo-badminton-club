@@ -256,6 +256,20 @@ path#q2 {
     margin-top: 10px;
 }
 
+.logo-text-container p.title::after {
+    background: none;
+    content: attr(data-heading) / "";
+    left: 0;
+  top: 0;
+    z-index: -1;
+    position: absolute;
+    text-shadow: 
+    -1px 0 1px #c6bb9f, 
+    0 1px 1px #c6bb9f, 
+    5px 5px 10px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
 .club-name {
     color: #ff6f61;
 }
