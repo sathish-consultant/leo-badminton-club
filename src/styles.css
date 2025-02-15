@@ -19,7 +19,7 @@ section {
     border-radius: 5px;
     /* box-shadow: inset 6px -6px 11px 5px #19272d; */
     color: white;
-    background-image: linear-gradient(rgb(123 0 0 / 25%), rgb(0 0 0 / 50%));
+    /* background-image: linear-gradient(rgb(123 0 0 / 25%), rgb(0 0 0 / 50%)); */
 }
 
 section h2 {

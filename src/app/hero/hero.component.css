@@ -181,9 +181,12 @@ path#q2 {
 }
 
 .hero .background-video {
-    opacity: 0.2;
+    opacity: 0.4;
     position: absolute;
     overflow: hidden;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-content{
@@ -231,14 +234,14 @@ path#q2 {
 
 .logo-img {
     position: absolute;
-    width: 70px;
-    opacity: 0.8;
+    width: 100px;
+    /* opacity: 0.8; */
 }
 
 .logo-text-container {
     position: absolute;
-    top: 0;
-    left: 90px;
+    top: 10px;
+    left: 120px;
 }
 
 .logo-text-container p {

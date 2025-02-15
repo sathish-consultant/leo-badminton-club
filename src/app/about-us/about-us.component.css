@@ -1,7 +1,15 @@
 .about-us-section{
     border-bottom: 1px grey solid;
-    background-image: linear-gradient(rgb(51 0 0 / 59%), rgb(0 0 0 / 50%)), url('../../../public/assets/about-us-4.jpg');
+    background-image: linear-gradient(rgb(51 0 0 / 59%), rgb(0 0 0 / 50%)), url('../../../public/assets/about-us-4.jpg'); 
+    /* background-image: linear-gradient(rgb(2 13 79 / 87%), rgb(104 58 15 / 50%)), url('../../../public/assets/about-us-4.jpg');  */
+    
+    /* blue pink*/
+    /* background-image: linear-gradient(rgb(93 0 58 / 94%), rgb(0 41 99 / 85%)), url('../../../public/assets/about-us-4.jpg'); */
 
+    /* gold blue */
+    /* background-image: linear-gradient(rgb(93 63 31 / 94%), rgb(0 41 99 / 85%)), url(./media/about-us-4.jpg); */
+
+    /* background-image:linear-gradient(rgb(9 22 52), rgb(255 99 0 / 28%)); */
     background-size: cover;
     background-position: center;
 }
@@ -12,25 +20,147 @@
     font-size: 15px;
 }
 
+.logo-image{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    opacity: 0.8;
+    top: 20%;
+}
 
-@media only screen and (min-width: 600px) {
 
-    /* For tablets: */
-    .text-section{
-        width: 40%;
-        color: white;
-        font-size: 23px;
+@media only screen and (min-width: 768px) {
 
+    /* For desktop: */
+
+
+    .logo-image{
+        width: 40vw;
+        right: 0;
+        top: 5%;
     }
 }
 
 @media only screen and (min-width: 768px) {
 
     /* For desktop: */
+
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
     .text-section{
         width: 30%;
         color: white;
         font-size: 28px;
 
     }
-}
+    .logo-image{
+        width: 25vw;
+        right: 0;
+        top: 5%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .text-section{
+        width: 30%;
+        color: white;
+        font-size: 28px;
+
+    }
+
+    .logo-image{
+        width: 40vw;
+        right: 0;
+        top: 5%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .text-section{
+        width: 40%;
+        color: white;
+        font-size: 23px;
+
+    }
+    .logo-image{
+        width: 40vw;
+        right: 0;
+        top: 5%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .text-section{
+        width: 40%;
+        color: white;
+        font-size: 23px;
+
+    }
+    .logo-image{
+        width: 30vw;
+        right: 0;
+        top: 5%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    
+    .text-section{
+        width: 40%;
+        color: white;
+        font-size: 23px;
+
+    }
+    .logo-image{
+        width: 35vw;
+        right: 0;
+        top: 5%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
