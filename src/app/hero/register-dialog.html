@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Register</h2>
+<mat-dialog-content>
+  <p>What's your name</p>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="registerName" />
+  </mat-form-field>
+  <p>What's your Phone number</p>
+  <mat-form-field>
+    <mat-label>Phone Number</mat-label>
+    <input matInput [(ngModel)]="registerPhoneNumber" />
+  </mat-form-field>
+  <p>What's your Email Address</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button class="leo-button" (click)="register()" cdkFocusInitial>Register</button>
+</mat-dialog-actions>

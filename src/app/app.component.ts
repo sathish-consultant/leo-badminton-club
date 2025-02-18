@@ -10,6 +10,7 @@ import { SchedulesComponent } from './schedules/schedules.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatListItem } from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { MatListItem } from '@angular/material/list';
     SchedulesComponent,
     MatIconModule,
     MatListModule,
-    MatListItem
+    MatListItem,
+    MatDialogModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
